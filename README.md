@@ -1,13 +1,13 @@
 # Euchre
 
 ## Goals:
-  ### Game Logic:
+  ### 1. Game Logic:
     * pass/pick-up remainder card
     * winning tricks and hands
     * keeping score and determining winner
     * loner hands 
 
-  ### Streches:
+  ### 2. Streches:
     * UI
     * AI/Bot logic
     
