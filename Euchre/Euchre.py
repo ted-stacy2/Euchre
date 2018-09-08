@@ -53,9 +53,6 @@ class Euchre():
 		args = [self.flip, self.dealer, self.players, self.position]
 		self.trick = Trick(*args).calling_round()
 
-	def start_game(self):
-		"""  """
-
 
 euchre = Euchre()
 
@@ -63,7 +60,7 @@ euchre = Euchre()
 euchre.add_players()
 
 # start the game
-euchre.start_game()
+#euchre.start_game()
 
 
 #euchre.determine_dealer()
