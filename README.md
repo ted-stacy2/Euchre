@@ -12,7 +12,6 @@
   ### 2. Streches:
     * UI
     * AI/Bot logic
-      * easy
-      * medium
-      * hard
+      * easy, medium, hard
+      * passive, neutral, aggressive
     
