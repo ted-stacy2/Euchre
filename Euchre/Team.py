@@ -4,7 +4,8 @@ class Team():
 		self.score = 0
 
 	def __str__(self):
-		return "This team contains: {0} and {1}".format(self.players[0].getName(), self.players[1].getName())
+		return "This team contains: {0} and {1}" \
+				.format(self.players[0].getName(), self.players[1].getName())
 
 	def add_player(self, player):
 		self.players.append(player)

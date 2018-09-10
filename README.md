@@ -4,7 +4,7 @@
   ### 1. Game Logic:
     * Add players/create teams - done
     * deal out cards - done
-    * pass/pick-up remainder card
+    * pass/pick-up remainder card - done
     * winning tricks and hands
     * keeping score and determine winner
     * loner hands 

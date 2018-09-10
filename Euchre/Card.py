@@ -3,11 +3,13 @@ class Card:
 		self.rank = rank
 		self.suit = suit
 		self.value = rank - 8
+		self.filename = "{0}{1}.jpg".format(self.rank, self.suit[0])
 
 	def get_rank(self):
 		return self.rank
 
 	def get_suit(self):
+		""" Only return the first letter for consistency """
 		return self.suit
 
 	def get_value(self):
@@ -30,6 +32,18 @@ class Card:
 			
 		return "The {0} of {1}".format(rank, self.suit)
 
+class Bower(Card):
+	""" Give jacks an off suit so bowers are easier """
+	def __init__(self, rank, suit):
+ 		Card.__init__(self, rank, suit)
+ 		if self.suit == "Hearts":
+ 			self.off_suit = "Diamonds"
+ 		elif self.suit == "Diamonds":
+ 			self.off_suit = "Hearts"
+ 		elif self.suit == "Spades":
+ 			self.off_suit = "Clubs"
+ 		else:
+ 			self.off_suit = "Spades"
 
 def print_rank(rank):
 	if rank == 11:

@@ -1,4 +1,5 @@
 from Card import Card
+from Card import Bower
 from random import shuffle
 
 class Deck:
@@ -13,7 +14,10 @@ class Deck:
 		ranks = [9, 10, 11, 12, 13, 14]
 		for rank in ranks:
 			for suit in suits:
-				self.deck.append(Card(rank, suit))
+				if rank == 9:
+					self.deck.append(Bower(rank, suit))
+				else:
+					self.deck.append(Card(rank, suit))
 
 	def shuffle(self):
 		shuffle(self.deck)
